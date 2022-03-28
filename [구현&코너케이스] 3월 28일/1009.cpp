@@ -1,24 +1,24 @@
 #include <iostream>
-#include <cmath>
 
 using namespace std;
 
 int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
-
     int t, a, b;
 
     cin >> t;
 
     while (t--) {
+        int p = 1;
         cin >> a >> b;
-        long long p = pow(a, b);
-        if (p % 10 == 0)
-            cout << 10;
+        while (b--) {
+            p = (p * a) % 10;
+            if (p == 0)
+                break;
+        }
+        if (p == 0)
+            cout << 10 << '\n';
         else
-            cout << p % 10;
+            cout << p << '\n';
     }
 
     return 0;
