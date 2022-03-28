@@ -10,6 +10,7 @@ int main() {
     while (t--) {
         int p = 1;
         cin >> a >> b;
+        
         while (b--) {
             p = (p * a) % 10;
             if (p == 0)
