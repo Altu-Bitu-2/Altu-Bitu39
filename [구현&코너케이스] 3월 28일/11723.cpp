@@ -13,7 +13,9 @@ int main() {
     vector<int> a(20);
 
     cin >> m;
-
+    
+    //각 인덱스마다 특정 숫자를 지정해 0과 1로만 배열 구성
+    
     while (m--) {
         string s;
         cin >> s;
@@ -27,6 +29,7 @@ int main() {
             a.assign(20, false);
             continue;
         }
+       //all, empty는 x를 입력받지 않으므로 continue
 
         cin >> x;
 
