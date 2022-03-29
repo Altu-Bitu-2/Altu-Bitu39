@@ -48,10 +48,7 @@ int main() {
         }
 
         else if (s == "toggle") {
-            if (a[x - 1])
-                a[x - 1] = false;
-            else
-                a[x - 1] = true;
+            a[x - 1] = !a[x - 1];
         }
     }
 
